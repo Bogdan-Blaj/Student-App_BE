@@ -1,0 +1,5 @@
+package com.appstudent.app.ws.io.repository;
+
+public interface StudentRepository {
+
+}

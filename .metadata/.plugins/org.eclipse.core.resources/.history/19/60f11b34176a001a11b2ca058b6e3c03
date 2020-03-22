@@ -1,0 +1,17 @@
+package com.appstudent.app.ws.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.appstudent.app.ws.service.StudentService;
+import com.appstudent.app.ws.shared.dto.StudentDTO;
+
+@Service
+public class StudentServiceImpl implements StudentService{
+
+	@Override
+	public StudentDTO createStudent(StudentDTO student) {
+		// TODO Auto-generated method stub
+		return student;
+	}
+
+}

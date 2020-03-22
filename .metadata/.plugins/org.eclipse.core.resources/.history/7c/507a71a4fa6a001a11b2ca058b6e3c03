@@ -1,0 +1,11 @@
+package com.appstudent.app.ws.exceptions;
+
+public class StudentExistingException extends RuntimeException {
+
+	private static final long serialVersionUID = 6525268396611849615L;
+
+	public StudentExistingException(String message) {
+		super(message);
+	}
+
+}

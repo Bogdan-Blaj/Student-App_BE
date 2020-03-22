@@ -1,0 +1,36 @@
+package com.appstudent.app.ws.ui.model.response;
+
+import java.util.Date;
+
+public class ErrorMessage {
+	private String text;
+	private Date timestamp;
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public Date getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(Date timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	public ErrorMessage(String text, Date timestamp) {
+		super();
+		this.text = text;
+		this.timestamp = timestamp;
+	}
+
+	public ErrorMessage() {
+		super();
+	}
+	
+	
+}
