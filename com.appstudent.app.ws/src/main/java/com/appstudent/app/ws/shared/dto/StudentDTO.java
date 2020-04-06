@@ -1,6 +1,7 @@
 package com.appstudent.app.ws.shared.dto;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class StudentDTO implements Serializable {
 	/**
@@ -12,9 +13,11 @@ public class StudentDTO implements Serializable {
 	private String name;
 	private String firstName;
 	private int age;
+	private int studyYear;
 	private String email;
 	private String password;
 	private String encryptedPassword;
+	private List<CourseDTO> courses;
 
 	public long getId() {
 		return id;
@@ -78,6 +81,22 @@ public class StudentDTO implements Serializable {
 
 	public void setEncryptedPassword(String encryptedPassword) {
 		this.encryptedPassword = encryptedPassword;
+	}
+
+	public int getStudyYear() {
+		return studyYear;
+	}
+
+	public void setStudyYear(int studyYear) {
+		this.studyYear = studyYear;
+	}
+
+	public List<CourseDTO> getCourses() {
+		return courses;
+	}
+
+	public void setCourses(List<CourseDTO> courses) {
+		this.courses = courses;
 	}
 
 }

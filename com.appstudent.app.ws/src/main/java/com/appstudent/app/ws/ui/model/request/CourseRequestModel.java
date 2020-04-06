@@ -1,0 +1,32 @@
+package com.appstudent.app.ws.ui.model.request;
+
+public class CourseRequestModel {
+	private String name;
+	private String professor;
+	private int studyYear;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getProfessor() {
+		return professor;
+	}
+
+	public void setProfessor(String professor) {
+		this.professor = professor;
+	}
+
+	public int getStudyYear() {
+		return studyYear;
+	}
+
+	public void setStudyYear(int studyYear) {
+		this.studyYear = studyYear;
+	}
+
+}

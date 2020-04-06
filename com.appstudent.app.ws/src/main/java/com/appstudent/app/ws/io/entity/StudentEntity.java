@@ -1,12 +1,15 @@
 package com.appstudent.app.ws.io.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.annotation.Generated;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity(name="students")
 public class StudentEntity implements Serializable {
@@ -32,11 +35,25 @@ public class StudentEntity implements Serializable {
 	@Column(nullable = false)
 	private int age;
 	
+	@Column(nullable = false)
+	private int studyYear;
+	
 	@Column(nullable = false, unique = true)
 	private String email;
 	
 	@Column(nullable = false)
 	private String encryptedPassword;
+	
+	@OneToMany(mappedBy = "studentDetails", cascade=CascadeType.ALL)
+	private List<CourseEntity> courses;
+
+	public List<CourseEntity> getCourses() {
+		return courses;
+	}
+
+	public void setCourses(List<CourseEntity> courses) {
+		this.courses = courses;
+	}
 
 	public long getId() {
 		return id;
@@ -92,6 +109,14 @@ public class StudentEntity implements Serializable {
 
 	public void setEncryptedPassword(String encryptedPassword) {
 		this.encryptedPassword = encryptedPassword;
+	}
+
+	public int getStudyYear() {
+		return studyYear;
+	}
+
+	public void setStudyYear(int studyYear) {
+		this.studyYear = studyYear;
 	}
 
 }

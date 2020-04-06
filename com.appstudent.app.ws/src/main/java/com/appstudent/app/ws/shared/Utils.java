@@ -11,7 +11,11 @@ public class Utils {
 	private final String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ";
 	private final Random random = new Random();
 	
-	public String generateUserId(int lenght) {
+	public String generateStudentId(int lenght) {
+		return new String(generateRandomString(lenght));
+	}
+	
+	public String generateCourseId(int lenght) {
 		return new String(generateRandomString(lenght));
 	}
 	

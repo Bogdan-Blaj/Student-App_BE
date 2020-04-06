@@ -1,5 +1,0 @@
-package com.appstudent.app.ws.service;
-
-public interface StudentService {
-
-}

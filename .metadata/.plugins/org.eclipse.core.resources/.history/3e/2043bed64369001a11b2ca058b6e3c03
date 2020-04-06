@@ -1,5 +1,0 @@
-package com.appstudent.app.ws.ui.model.request;
-
-public class StudentLoginRequestModel {
-
-}

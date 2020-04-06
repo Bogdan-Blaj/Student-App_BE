@@ -3,9 +3,9 @@ package com.appstudent.app.ws.ui.model.response;
 public class CourseRest {
 	
 	private String name;
-	private String score;
-	private String teacher;
-	private CourseStatus passed;
+	private int score;
+	private String professor;
+	private boolean status;
 
 	public String getName() {
 		return name;
@@ -15,28 +15,29 @@ public class CourseRest {
 		this.name = name;
 	}
 
-	public String getScore() {
+	public int getScore() {
 		return score;
 	}
 
-	public void setScore(String score) {
+	public void setScore(int score) {
 		this.score = score;
 	}
 
-	public String getTeacher() {
-		return teacher;
+
+	public boolean getPassed() {
+		return status;
 	}
 
-	public void setTeacher(String teacher) {
-		this.teacher = teacher;
+	public void setPassed(boolean status) {
+		this.status = status;
 	}
 
-	public CourseStatus getPassed() {
-		return passed;
+	public String getProfessor() {
+		return professor;
 	}
 
-	public void setPassed(CourseStatus passed) {
-		this.passed = passed;
+	public void setProfessor(String professor) {
+		this.professor = professor;
 	}
 
 }
